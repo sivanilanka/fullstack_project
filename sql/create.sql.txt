@@ -1,0 +1,41 @@
+-- ===============================
+-- CREATE DEPARTMENT TABLE
+-- ===============================
+
+CREATE TABLE department (
+  department_id INT PRIMARY KEY AUTO_INCREMENT,
+  capacity INT NOT NULL,
+  name VARCHAR(255) NOT NULL
+);
+
+-- ===============================
+-- CREATE EMPLOYEE TABLE
+-- ===============================
+
+CREATE TABLE employee (
+  id BIGINT PRIMARY KEY AUTO_INCREMENT,
+  email VARCHAR(255) NOT NULL UNIQUE,
+  first_name VARCHAR(255) NOT NULL,
+  last_name VARCHAR(255) NOT NULL,
+  photograph_path VARCHAR(255),
+  title VARCHAR(255),
+  department_department_id INT,
+  CONSTRAINT fk_employee_department
+    FOREIGN KEY (department_department_id)
+    REFERENCES department(department_id)
+);
+
+-- ===============================
+-- CREATE EMPLOYEE SALARY TABLE
+-- ===============================
+
+CREATE TABLE employee_salary (
+  id BIGINT PRIMARY KEY AUTO_INCREMENT,
+  amount DOUBLE NOT NULL,
+  description VARCHAR(255),
+  payment_date DATETIME(6),
+  employee_id BIGINT,
+  CONSTRAINT fk_salary_employee
+    FOREIGN KEY (employee_id)
+    REFERENCES employee(id)
+);

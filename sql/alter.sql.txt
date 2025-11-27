@@ -1,0 +1,1 @@
+-- No ALTER TABLE operations were used for this project.

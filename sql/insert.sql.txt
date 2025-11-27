@@ -1,0 +1,45 @@
+-- ===============================
+-- INSERT DEPARTMENTS
+-- ===============================
+
+INSERT INTO department (department_id, capacity, name) VALUES
+(1, 10, 'HR'),
+(2, 30, 'Engineering'),
+(3, 15, 'Finance');
+
+-- ===============================
+-- INSERT EMPLOYEES
+-- ===============================
+
+INSERT INTO employee (
+  id, email, first_name, last_name, photograph_path, title, department_department_id
+) VALUES
+(1, 'lankalakshmisivanireddy@gmail.com', 'Lakshmi', 'Sivani', '/photos/sivani.jpg', 'Engineer', 2),
+(2, 'rahul@gmail.com', 'Rahul', 'Kumar', '/photos/rahul.jpg', 'HR Manager', 1),
+(3, 'priyaesdproj@gmail.com', 'Priya', 'Sharma', '/photos/priya.jpg', 'Accountant', 3);
+
+-- ===============================
+-- INSERT EMPLOYEE SALARY HISTORY
+-- (Optional — You can include some or all)
+-- ===============================
+
+INSERT INTO employee_salary (id, amount, description, payment_date, employee_id) VALUES
+(1, 75000, 'Monthly Salary', '2025-11-27 01:37:44.000000', 1),
+(2, 90000, 'Monthly Salary', '2025-11-27 01:37:44.000000', 2),
+(3, 65000, 'Monthly Salary', '2025-11-27 01:37:44.000000', 3),
+(4, 20000, 'bonus', '2025-11-27 07:53:19.753238', 1),
+(5, 20000, 'bonus', '2025-11-27 07:53:19.875108', 2),
+(6, 20000, 'bonus', '2025-11-27 07:53:19.880116', 3),
+(7, 50000, 'Monthly salary', '2025-11-27 11:38:37.725720', 1),
+(8, 50000, 'Monthly salary', '2025-11-27 11:38:37.903220', 2),
+(9, 50000, 'Monthly salary', '2025-11-27 11:38:37.906220', 3),
+(10, 35000, 'Monthly salary', '2025-11-27 13:13:56.694061', 2),
+(11, 50000, 'Monthly salary', '2025-11-27 14:05:47.619313', 1),
+(12, 50000, 'Monthly salary', '2025-11-27 14:05:47.720784', 2),
+(13, 50000, 'Monthly Salary', '2025-11-27 14:06:34.742079', 2),
+(14, 50000, 'Monthly salary', '2025-11-27 15:14:09.991156', 2),
+(15, 65000, 'Monthly salary', '2025-11-27 15:20:48.951775', 1),
+(16, 10000, 'Monthly salary', '2025-11-27 15:21:04.868255', 2),
+(17, 10000, 'Monthly salary', '2025-11-27 15:21:04.879871', 1),
+(18, 50000, 'Monthly salary', '2025-11-27 15:43:37.981174', 3),
+(19, 5000, 'Monthly salary', '2025-11-27 16:20:55.646727', 3);
