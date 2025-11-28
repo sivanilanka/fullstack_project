@@ -20,7 +20,6 @@ INSERT INTO employee (
 
 -- ===============================
 -- INSERT EMPLOYEE SALARY HISTORY
--- (Optional — You can include some or all)
 -- ===============================
 
 INSERT INTO employee_salary (id, amount, description, payment_date, employee_id) VALUES
