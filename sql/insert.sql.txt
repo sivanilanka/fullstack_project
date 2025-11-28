@@ -1,15 +1,12 @@
--- ===============================
 -- INSERT DEPARTMENTS
--- ===============================
 
 INSERT INTO department (department_id, capacity, name) VALUES
 (1, 10, 'HR'),
 (2, 30, 'Engineering'),
 (3, 15, 'Finance');
 
--- ===============================
+
 -- INSERT EMPLOYEES
--- ===============================
 
 INSERT INTO employee (
   id, email, first_name, last_name, photograph_path, title, department_department_id
@@ -18,9 +15,8 @@ INSERT INTO employee (
 (2, 'rahul@gmail.com', 'Rahul', 'Kumar', '/photos/rahul.jpg', 'HR Manager', 1),
 (3, 'priyaesdproj@gmail.com', 'Priya', 'Sharma', '/photos/priya.jpg', 'Accountant', 3);
 
--- ===============================
+
 -- INSERT EMPLOYEE SALARY HISTORY
--- ===============================
 
 INSERT INTO employee_salary (id, amount, description, payment_date, employee_id) VALUES
 (1, 75000, 'Monthly Salary', '2025-11-27 01:37:44.000000', 1),
